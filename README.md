@@ -6,9 +6,7 @@ STEP 2: Install Spoti-dl with this cmd ```pip install spoti-dl```
 
 STEP 3: Install [FFmpeg](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z) and after installation, unzip it then find bin file and add this it in your user environment variable path.
 
-STEP 4: Get Developers keys from spotify.
-
- Steps to make a Spotify developer account:
+STEP 4: Get Developers keys from spotify. Steps to make a Spotify developer account:
  
 a. Go to [Spotify Dev Dashboard](https://developer.spotify.com/dashboard/applications)
 
@@ -33,4 +31,4 @@ STEP 7: You can also change the saving directory path where you wish to keep you
 
 STEP 8: Thank me later!!
 
-                                                                                         ~Dikshit Singh
+                                                                                                   ~Dikshit Singh
