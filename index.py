@@ -6,9 +6,12 @@ from pathlib import Path
 
 source = 'C:\\Python\\Spotdlfy\\dl'
 destination = str(Path.home()/"Music")
-link = input("Enter the link of playlist , song, or album : ")
+
+#link of playlist, song or album by input from user
+link = input("Enter the link of playlist, song, or album : ")
 subprocess.run(f'spotidl {link}')
 
+#file finding pattern
 allfile = glob.glob(os.path.join(source,'*.mp3*'),recursive = True)
 print("File to move",allfile)
 
