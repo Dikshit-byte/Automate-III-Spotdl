@@ -8,11 +8,16 @@ STEP 3: Install [FFmpeg](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essential
 
 STEP 4: Get Developers keys from spotify.
 
-    Steps to make a Spotify developer account:
+ Steps to make a Spotify developer account:
+ 
 a. Go to [Spotify Dev Dashboard](https://developer.spotify.com/dashboard/applications)
+
 b. Login with your credentials and click on "create an app".
+
 c. Enter any name of choice, app description, tick the checkbox and proceed.
+
 d. Now you have access to your client ID. Click on "Show client secret" to get your client secret.
+
 e. Now click on "edit settings" and in the "redirect URIs" section add ```http://localhost:3000/callback```
 
 STEP 5: Define these three environment variables: 
