@@ -1,6 +1,19 @@
-import SpotifyScraper
-from SpotifyScraper.scraper import Scraper,Request
+import os
+import glob
+import shutil
+import subprocess
+from pathlib import Path
 
-request = Request().request()
+source = 'C:\\Python\\Spotdlfy\\dl'
+destination = str(Path.home()/"Music")
+link = input("Enter the link of playlist , song, or album : ")
+subprocess.run(f'spotidl {link}')
 
-print(Scraper(session=request).get_track_url_info(url='https://open.spotify.com/track/7wqpAYuSk84f0JeqCIETRV?si=b35Rzak1RgWvBAnbJteHkA'))
+allfile = glob.glob(os.path.join(source,'*.mp3*'),recursive = True)
+print("File to move",allfile)
+
+#for all files in dl folder to move into music folder
+for file_path in allfile:
+    dst_path = os.path.join(destination,os.path.basename(file_path))
+    shutil.move(file_path,dst_path)
+    print(f'Moved {file_path} -> {dst_path}')
