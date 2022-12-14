@@ -18,7 +18,7 @@ d. Now you have access to your client ID. Click on "Show client secret" to get y
 
 e. Now click on "edit settings" and in the "redirect URIs" section add ```http://localhost:3000/callback```
 
-STEP 5: Define these three environment variables: 
+STEP 5: Define these three in environment variables: 
 ```
 SPOTIPY_CLIENT_ID - <client id that you get from spotify developer account>
 SPOTIPY_CLIENT_SECRET - <client secret>
